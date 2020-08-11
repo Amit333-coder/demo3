@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assignment_2</title>
+<style>
+
+/********** Base styles **********/
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  
+text-align: center;
+font-family: 'Courier New', Courier, monospace;
+}
+.col-lg-3{
+    border: 1px solid black;
+    background-color: grey;
+    margin-left: 40px;
+    height: 340px;
+    padding-bottom: 5px;
+}
+span{
+  float: right;
+}
+
+.inside_block{
+    font-size: 40px;
+    text-align: right;
+    border:black;
+    border-style: solid;
+    
+}
+.dummy{
+  font-size: 20px;
+  width:100%;
+text-align:center;
+padding-top: 50px;
+
+}
+/* Simple Responsive FramewSork. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .col-lg-1, .col-lg-2, .col-lg-3{
+    float: left;
+    border:1px solid black;
+   
+  }
+  .col-lg-1 {
+    width: 30%;
+  }
+  .col-lg-2 {
+    width: 30%;
+  }
+  .col-lg-3 {
+    width: 30%;
+  }
+
+/********** Medium devices only **********/
+@media (min-width: 640px) and (max-width: 1199px) {
+   .col-md-6{
+    float: left;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    
+    width: 100%;
+  }
+/************Small device only*************/
+@media (max-width: 639px) {
+  .col-md-6{
+    float: left;
+    margin-top: 20px;
+    border: 1px solid green;
+  }
+  .col-md-1 {
+    width: 100%;
+  }
+  .col-md-2 {
+    width: 100%;
+  }
+  .col-md-3 {
+    
+    width: 100%;
+  }
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<br>
+<br>
+
+<div class="row">
+  <div class="col-lg-3 col-md-1">
+    <span class="inside_block" style="background-color: pink;">Chicken</span>
+    <p class="dummy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium. This is new Block.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+  <div class="col-lg-3 col-md-2"><span class="inside_block" style="background-color: red;">Beef</span>
+    <p class="dummy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium. This is new Block.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+  <div class="col-lg-3 col-md-3"><span class="inside_block" style="background-color: yellow;">Sushi</span>
+    <p class="dummy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex et similique cupiditate dignissimos delectus nulla dolore, eos dolorum quidem excepturi, facere non repellat accusamus, atque? Id voluptate eos et accusantium. This is new Block.Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></div>
+ 
+
+</body>
+</html>
